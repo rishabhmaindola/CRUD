@@ -7,7 +7,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
 app.get('/', (req, res) =>{
-    res.send('ITS LIVE AND WEALTHY')
+    res.send('ITS LIVE ')
 })
 
 app.get('/products', async(req, res) => {
@@ -73,7 +73,7 @@ mongoose.connect('mongodb+srv://Rishabh:rishabh05112@cluster0.if8ukjq.mongodb.ne
 .then(()=>{
     console.log("Connected to MongoDB")
     app.listen(3000, () => {
-        console.log('NODE API IS RUNNING ON PORT 3000')
+        console.log('API IS RUNNING ON PORT 3000')
     })
 })
 .catch((error)=>{
